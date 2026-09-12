@@ -291,35 +291,114 @@
     </section><!-- End Resume Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+<section id="portfolio" class="portfolio section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Here is a list of completed projects</p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>A selection of projects I've designed and developed.</p>
+  </div>
+  <!-- End Section Title -->
 
-      <div class="container">
+  <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    <div class="isotope-layout"
+         data-default-filter="*"
+         data-layout="masonry"
+         data-sort="original-order">
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="row gy-4 isotope-container"
+           data-aos="fade-up"
+           data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-               <a href="portfolio-details.html"><img src="assets\img\portfolio\Kheem_home.jpg" class="img-fluid" alt=""></a> 
-                <div class="portfolio-info">
-                  <h4>Kheems Collections</h4>
-                  <p> E-commerce website </p>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-          </div><!-- End Portfolio Container -->
+        <!-- Kheems Collections -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+          <div class="portfolio-content h-100">
 
-        </div><!-- End Isotope Layout -->
+            <a href="portfolio-details.html?project=kheems">
+              <img src="assets/img/portfolio/Kheem_home.jpg"
+                   class="img-fluid"
+                   alt="Kheems Collections e-commerce website">
+            </a>
+
+            <div class="portfolio-info">
+              <h4>Kheems Collections</h4>
+              <p>E-commerce website</p>
+
+              <a href="portfolio-details.html?project=kheems"
+                 title="More Details"
+                 class="details-link">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+
+        <!-- TADS Construction -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+          <div class="portfolio-content h-100">
+
+            <a href="portfolio-details.html?project=tads">
+              <img src="assets/img/portfolio/tads.png"
+                   class="img-fluid"
+                   alt="TADS Construction website">
+            </a>
+
+            <div class="portfolio-info">
+              <h4>TADS Construction</h4>
+              <p>Construction company website</p>
+
+              <a href="portfolio-details.html?project=tads"
+                 title="More Details"
+                 class="details-link">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+
+        <!-- MonadVerse -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+          <div class="portfolio-content h-100">
+
+            <a href="portfolio-details.html?project=monad">
+              <img src="assets/img/portfolio/monad.jpg"
+                   class="img-fluid"
+                   alt="MonadVerse Web3 website">
+            </a>
+
+            <div class="portfolio-info">
+              <h4>MonadVerse</h4>
+              <p>Web3 website</p>
+
+              <a href="portfolio-details.html?project=monad"
+                 title="More Details"
+                 class="details-link">
+                <i class="bi bi-link-45deg"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+
       </div>
-    </section><!-- End Portfolio Section -->
+      <!-- End Portfolio Container -->
+
+    </div>
+    <!-- End Isotope Layout -->
+
+  </div>
+
+</section>
+<!-- End Portfolio Section -->
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
@@ -435,7 +514,8 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   
-
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/portfolio-details.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

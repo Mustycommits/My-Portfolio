@@ -1092,3 +1092,13 @@ section {
     padding-right: 20px 15px;
   }
 }
+.portfolio-content {
+  overflow: hidden;
+}
+
+.portfolio-content img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}

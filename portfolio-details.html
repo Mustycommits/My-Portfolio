@@ -5,10 +5,31 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Khalid Mustapha</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Project | Khalid Mustapha</title>
+  <!-- Primary Meta Tags -->
+<meta name="description" content="Khalid Mustapha — Website Developer specializing in PHP, JavaScript, MySQL, Laravel, and modern web applications. Explore my portfolio and selected projects.">
+<meta name="keywords" content="Khalid Mustapha, web developer, website developer, PHP developer, JavaScript developer, Laravel developer, MySQL developer, backend developer, web development, Nigeria">
+<meta name="author" content="Khalid Mustapha">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#149ddd">
 
+<!-- Canonical URL -->
+<link rel="canonical" href="https://khalid-mustapha.netlify.app/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Khalid Mustapha | Website Developer">
+<meta property="og:description" content="Explore the portfolio and selected projects of Khalid Mustapha, a website developer specializing in PHP, JavaScript, MySQL and modern web applications.">
+<meta property="og:url" content="https://khalid-mustapha.netlify.app/">
+<meta property="og:image" content="https://khalid-mustapha.netlify.app/assets/img/portfolio/Kheem_home.jpg">
+<meta property="og:site_name" content="Khalid Mustapha">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Khalid Mustapha | Website Developer">
+<meta name="twitter:description" content="Explore my portfolio and selected web development projects.">
+<meta name="twitter:image" content="https://khalid-mustapha.netlify.app/assets/img/portfolio/Kheem_home.jpg">
+<meta name="twitter:creator" content="@KhalidDMusty">
   <!-- Favicons -->
   <link href="assets/img/letter-k.png" rel="icon">
 
@@ -38,7 +59,7 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="Twitter pfp.jpg" alt="Profile photo" class="img-fluid rounded-circle">
+        <img src="DP.jpg" alt="Profile photo" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Khalid Mustapha</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://x.com/KhalidDMusty" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -47,16 +68,7 @@
         </div>
       </div>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+      
     </div>
   </header><!-- End Header -->
 
@@ -78,55 +90,83 @@
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+      <section id="portfolio-details" class="portfolio-details">
 
-        <div class="row gy-4">
+  <div class="container">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
+    <div class="row gy-4">
 
-                <div class="swiper-slide">
-                  <img src="assets\img\portfolio\Kheem_home.jpg" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets\img\portfolio\Shop_section.jpg" alt="">
-                </div>
+      <!-- Project Images -->
+      <div class="col-lg-8">
 
-                <div class="swiper-slide">
-                  <img src="assets\img\portfolio\search feature.jpg" alt="">
-                </div>
+        <div class="portfolio-details-slider swiper">
 
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
+          <div id="project-images"
+               class="swiper-wrapper align-items-center">
+            <!-- Images inserted by JavaScript -->
           </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: Kheems Collections</li>
-                <li><strong>Project date</strong>: 01 March, 2025</li>
-                <li><strong>Project URL</strong>: <a href="https://kheems-collection.netlify.app/">kheems-collection.netlify.app/</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Here's a little more about the project</h2>
-              <p>
-                Kheems Collections is an e-commerce website that offers a variety of products including clothing, accessories, and home decor. The website features a user-friendly interface, easy navigation, and a secure checkout process. It was designed with HTML,CSS,JavaScript,PHP and MySQL.
-              </p>
-            </div>
-          </div>
+          <div class="swiper-pagination"></div>
 
         </div>
 
       </div>
-    </section><!-- End Portfolio Details Section -->
+      <!-- End Project Images -->
+
+
+      <!-- Project Information -->
+      <div class="col-lg-4">
+
+        <div class="portfolio-info">
+
+          <h3>Project information</h3>
+
+          <ul>
+            <li>
+              <strong>Category</strong>:
+              <span id="project-category"></span>
+            </li>
+
+            <li>
+              <strong>Client</strong>:
+              <span id="project-client"></span>
+            </li>
+
+            <li>
+              <strong>Project date</strong>:
+              <span id="project-date"></span>
+            </li>
+
+            <li>
+              <strong>Project URL</strong>:
+              <a id="project-url"
+                 href="#"
+                 target="_blank"
+                 rel="noopener noreferrer">
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+
+        <div class="portfolio-description">
+
+          <h2 id="project-title"></h2>
+
+          <p id="project-description"></p>
+
+        </div>
+
+      </div>
+      <!-- End Project Information -->
+
+    </div>
+
+  </div>
+
+</section>
+    <!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
 
@@ -157,6 +197,8 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <script src="assets/js/project.js"></script>
+  <script src="assets/js/portfolio-details.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
