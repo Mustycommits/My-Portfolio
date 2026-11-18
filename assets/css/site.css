@@ -594,6 +594,21 @@ a:hover {
   margin-top: auto;
 }
 
+/* An odd last project spans the full row so the grid has no gap */
+@media (min-width: 761px) {
+  .project-grid .project:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    flex-direction: row;
+  }
+  .project-grid .project:last-child:nth-child(odd) .project-media {
+    flex: 0 0 52%;
+    aspect-ratio: auto;
+    min-height: 300px;
+    border-bottom: 0;
+    border-right: 1px solid var(--rule-strong);
+  }
+}
+
 @media (max-width: 760px) {
   .project-grid {
     grid-template-columns: 1fr;

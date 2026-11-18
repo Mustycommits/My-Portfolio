@@ -151,4 +151,39 @@ const projects = {
       },
     ],
   },
+
+  segun: {
+    title: "Oluwasegun Mustapha, HR portfolio",
+    tagline: "A portfolio website for an HR professional.",
+    type: "Portfolio website",
+    client: "Oluwasegun Mustapha",
+    year: "2025",
+    stack: "React, Vite, Tailwind CSS, Framer Motion",
+    url: "https://github.com/Mustycommits/Segun",
+    urlLabel: "View code on GitHub",
+    description:
+      "A single-page portfolio for a Human Resources professional in Lagos. It introduces him, explains how he works, lists six roles from 2021 to the present with the detail of each, shows testimonials from colleagues and managers, and lets visitors download his CV or send a message.",
+    highlights: [
+      "Built a responsive single-page site in React with sections for the profile, work process, work experience, testimonials and contact.",
+      "Role details open in an accessible dialog that closes with Escape or a click outside.",
+      "Added a CV download and a contact form that opens the visitor's email app with the message filled in.",
+      "Refined the site in November 2026: fixed the navigation and footer links, cut the main photo from 2.3 MB to 285 KB, and added keyboard focus styles and reduced-motion support.",
+    ],
+    images: [
+      {
+        src: "assets/img/projects/segun-1.webp",
+        alt: "Home page of the HR portfolio with the headline Hello, I'm Oluwasegun Mustapha, a portrait photo and three summary figures",
+        caption: "The home page.",
+        width: 1360,
+        height: 860,
+      },
+      {
+        src: "assets/img/projects/segun-2.webp",
+        alt: "Work Experience section showing role cards for Evercare Hospital, The Analyst Hub, Project Get A Job, Shalina Healthcare, AAVA Brands and Suntory",
+        caption: "Work experience, newest role first.",
+        width: 1360,
+        height: 860,
+      },
+    ],
+  },
 };
