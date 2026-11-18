@@ -220,7 +220,7 @@
   visit.href = project.url;
   visit.target = "_blank";
   visit.rel = "noopener noreferrer";
-  visit.appendChild(doc.createTextNode("Visit live site"));
+  visit.appendChild(doc.createTextNode(project.urlLabel || "Visit live site"));
   visit.appendChild(externalIcon());
   side.appendChild(visit);
 
