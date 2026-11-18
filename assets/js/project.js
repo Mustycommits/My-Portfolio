@@ -45,7 +45,7 @@ const projects = {
     type: "Company website and admin dashboard",
     client: "TADS Construction & Engineering",
     year: "2026",
-    stack: "PHP, MySQL, HTML, CSS, JavaScript",
+    stack: "Laravel,PHP, MySQL, HTML, CSS, JavaScript",
     url: "https://tadsengineering.com/",
     description:
       "A business website for a construction and engineering company, built to present its services, projects and expertise to potential clients. Behind the public pages sits a PHP and MySQL administrative dashboard, so the team can manage the projects shown on the site without touching code.",
