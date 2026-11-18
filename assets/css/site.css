@@ -16,7 +16,7 @@
 }
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --paper: #ffffff;
   --surface: #f8fafc;
   --ink: #0f172a;
@@ -34,23 +34,6 @@
   --maxw: 1120px;
   --gutter: clamp(18px, 4vw, 32px);
   --header-h: 68px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #0b1220;
-    --surface: #111a2e;
-    --ink: #e6ebf4;
-    --ink-2: #a3b0c5;
-    --rule: #1f2b44;
-    --rule-strong: #334562;
-    --signal: #7cb0ff;
-    --signal-fill: #60a5fa;
-    --btn-bg: #2563eb;
-    --btn-ink: #ffffff;
-    --btn-hover: #1d4ed8;
-    --focus: #7cb0ff;
-  }
 }
 
 *,
