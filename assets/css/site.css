@@ -409,8 +409,12 @@ a:hover {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  align-items: center;
+  gap: 14px 12px;
   margin-top: 34px;
+}
+.hero-actions .text-link {
+  margin-left: 10px;
 }
 .availability {
   display: flex;
