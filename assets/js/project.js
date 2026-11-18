@@ -159,8 +159,7 @@ const projects = {
     client: "Oluwasegun Mustapha",
     year: "2025",
     stack: "React, Vite, Tailwind CSS, Framer Motion",
-    url: "https://github.com/Mustycommits/Segun",
-    urlLabel: "View code on GitHub",
+    url: "https://segunn.netlify.app/",
     description:
       "A single-page portfolio for a Human Resources professional in Lagos. It introduces him, explains how he works, lists six roles from 2021 to the present with the detail of each, shows testimonials from colleagues and managers, and lets visitors download his CV or send a message.",
     highlights: [
