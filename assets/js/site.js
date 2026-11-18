@@ -9,6 +9,36 @@
     el.textContent = String(new Date().getFullYear());
   });
 
+  /* Theme toggle: light is the default; the choice is remembered per browser */
+  var root_el = doc.documentElement;
+  var header = doc.querySelector(".header-inner");
+  if (header) {
+    var themeBtn = doc.createElement("button");
+    themeBtn.type = "button";
+    themeBtn.className = "theme-toggle";
+    themeBtn.innerHTML =
+      '<svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>' +
+      '<svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+    var themeMeta = doc.querySelector('meta[name="theme-color"]');
+    var syncTheme = function () {
+      var dark = root_el.getAttribute("data-theme") === "dark";
+      themeBtn.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+      themeBtn.title = dark ? "Switch to light theme" : "Switch to dark theme";
+      if (themeMeta) themeMeta.setAttribute("content", dark ? "#0b1220" : "#ffffff");
+    };
+    themeBtn.addEventListener("click", function () {
+      var dark = root_el.getAttribute("data-theme") !== "dark";
+      if (dark) root_el.setAttribute("data-theme", "dark");
+      else root_el.removeAttribute("data-theme");
+      try {
+        localStorage.setItem("theme", dark ? "dark" : "light");
+      } catch (e) {}
+      syncTheme();
+    });
+    header.appendChild(themeBtn);
+    syncTheme();
+  }
+
   /* Mobile menu */
   var toggle = doc.querySelector(".nav-toggle");
   var nav = doc.getElementById("site-nav");
